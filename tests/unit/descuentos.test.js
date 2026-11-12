@@ -17,4 +17,8 @@ describe('aplicarDescuento', () => {
   test('el resultado se redondea hacia abajo al peso entero', () => {
     expect(aplicarDescuento(1999, 'frecuente')).toBe(1799);
   });
+
+  test('un valor de cero sigue siendo cero con descuento', () => {
+    expect(aplicarDescuento(0, 'convenio')).toBe(0);
+  });
 });
