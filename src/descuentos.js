@@ -10,6 +10,9 @@ function aplicarDescuento(valor, tipoCliente) {
   if (tipoCliente === 'convenio') {
     return Math.floor((valor * 80) / 100);
   }
+  if (tipoCliente !== 'ninguno') {
+    throw new Error('Tipo de cliente no válido');
+  }
   return valor;
 }
 
