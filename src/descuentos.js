@@ -2,10 +2,10 @@
 
 function aplicarDescuento(valor, tipoCliente) {
   if (tipoCliente === 'frecuente') {
-    return valor * 0.9;
+    return Math.floor((valor * 90) / 100);
   }
   if (tipoCliente === 'convenio') {
-    return valor * 0.8;
+    return Math.floor((valor * 80) / 100);
   }
   return valor;
 }
