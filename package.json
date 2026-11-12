@@ -1,0 +1,19 @@
+{
+  "name": "parcial-parqueadero",
+  "version": "1.0.0",
+  "description": "Segundo parcial de Pruebas de Software: tarifas de un parqueadero.",
+  "private": true,
+  "scripts": {
+    "lint": "eslint .",
+    "test:unit": "jest tests/unit",
+    "test:bdd": "jest tests/bdd",
+    "test:cobertura": "jest --coverage"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "globals": "^17.14.0",
+    "jest": "^30.5.2",
+    "jest-cucumber": "^4.5.0"
+  }
+}
