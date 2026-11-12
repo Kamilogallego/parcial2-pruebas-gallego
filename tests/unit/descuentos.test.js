@@ -13,4 +13,8 @@ describe('aplicarDescuento', () => {
   test('un cliente con convenio tiene 20 % de descuento', () => {
     expect(aplicarDescuento(25000, 'convenio')).toBe(20000);
   });
+
+  test('el resultado se redondea hacia abajo al peso entero', () => {
+    expect(aplicarDescuento(1999, 'frecuente')).toBe(1799);
+  });
 });
