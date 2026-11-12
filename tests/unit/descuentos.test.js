@@ -21,4 +21,8 @@ describe('aplicarDescuento', () => {
   test('un valor de cero sigue siendo cero con descuento', () => {
     expect(aplicarDescuento(0, 'convenio')).toBe(0);
   });
+
+  test('rechaza un valor negativo', () => {
+    expect(() => aplicarDescuento(-1, 'ninguno')).toThrow('El valor no puede ser negativo');
+  });
 });
