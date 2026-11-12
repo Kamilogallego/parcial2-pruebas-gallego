@@ -25,4 +25,8 @@ describe('aplicarDescuento', () => {
   test('rechaza un valor negativo', () => {
     expect(() => aplicarDescuento(-1, 'ninguno')).toThrow('El valor no puede ser negativo');
   });
+
+  test('rechaza un tipo de cliente desconocido', () => {
+    expect(() => aplicarDescuento(3000, 'vip')).toThrow('Tipo de cliente no válido');
+  });
 });
