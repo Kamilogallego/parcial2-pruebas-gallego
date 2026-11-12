@@ -9,4 +9,8 @@ describe('aplicarDescuento', () => {
   test('un cliente frecuente tiene 10 % de descuento', () => {
     expect(aplicarDescuento(3000, 'frecuente')).toBe(2700);
   });
+
+  test('un cliente con convenio tiene 20 % de descuento', () => {
+    expect(aplicarDescuento(25000, 'convenio')).toBe(20000);
+  });
 });
