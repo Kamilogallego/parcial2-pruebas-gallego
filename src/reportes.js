@@ -1,10 +1,5 @@
-/** Reporte del día del parqueadero. */
 const { calcularTarifa } = require('./tarifas');
 
-/**
- * Resume las estadías del día: cuántos carros y cuántas motos entraron
- * y cuánto se recaudó en total.
- */
 function resumen(estadias) {
   const reporte = { carro: 0, moto: 0, totalRecaudado: 0 };
   for (const { tipo, minutos } of estadias) {

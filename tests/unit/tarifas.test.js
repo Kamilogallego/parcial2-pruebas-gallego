@@ -1,4 +1,3 @@
-/** Pruebas unitarias de calcularTarifa: particiones de equivalencia y valores límite. */
 const { calcularTarifa } = require('../../src/tarifas');
 
 describe('calcularTarifa', () => {

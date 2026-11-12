@@ -1,4 +1,3 @@
-/** Pruebas unitarias de aplicarDescuento, construidas con TDD. */
 const { aplicarDescuento } = require('../../src/descuentos');
 
 describe('aplicarDescuento', () => {

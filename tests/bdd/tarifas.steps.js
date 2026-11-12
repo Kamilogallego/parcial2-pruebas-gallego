@@ -1,4 +1,3 @@
-/** Pasos que ejecutan los escenarios de tarifas.feature. */
 const { defineFeature, loadFeature } = require('jest-cucumber');
 const { calcularTarifa } = require('../../src/tarifas');
 const { aplicarDescuento } = require('../../src/descuentos');
